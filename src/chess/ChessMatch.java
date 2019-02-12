@@ -59,9 +59,9 @@ public class ChessMatch {
 //		if (currentPlayer != ((ChessPiece) board.piece(position)).getColor()) {
 //			throw new ChessException("The chosen piece is not yours");
 //		}
-//		if (!board.piece(position).isThereAnyPossibleMove()) {
-//			throw new ChessException("There is no possible moves for the chosen piece");
-//		}
+		if (!board.piece(position).isThereAnyPossibleMove()) {
+			throw new ChessException("There is no possible moves for the chosen piece");
+		}
 	}
 
 //	private void validateTargetPosition(Position source, Position target) {
